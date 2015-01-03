@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% block head %}
+  <title>Hangman | {% block title %}Home{% endblock %}</title>
+  <link rel="stylesheet" href="/static/Hangman.css">
+  {% endblock %}
+</head>
+<body>
+	<div class="heading centered">
+		<h1>{% block intro %}Welcome to Hangman{% endblock %}</h1>
+		{% block game%}
+		<form action="{{ url_for('game') }}" method="POST">
+		<label>Player 1 please choose a word:</label>
+		<input type="password" name="word" value="" autofocus>
+		<input type="submit" value="Submit!">
+		</form>
+		{% endblock %}
+	</div>
+	<div class="wrapper">
+		<div class="top_frame">
+			<div class="side_frame">
+			</div>
+			<div class="base_frame">
+			</div>	
+				<div class="angle1">
+				</div>
+				<div class="angle2">
+				</div>
+		</div>
+		{% if score >= 1 %}
+		<div class="head">
+			<div class="lefteye">
+			</div>
+			<div class="righteye">
+			</div>
+			{% if score >= 2 %}
+			<div class="body">
+				{% if score >= 3 %}
+				<div class="rightarm">
+				</div>
+				{% endif %}	
+				{% if score >= 4 %}
+				<div class="leftarm">
+				</div>
+				{% endif %}	
+				{% if score >= 5 %}
+				<div class="leftleg">
+				</div>
+				{% endif %}	
+				{% if score >= 6 %}
+				<div class="rightleg">
+				</div>		
+				{% endif %}			
+			</div>
+			{% endif %}	
+		</div>	
+		{% endif %}	
+	</div>
+	{%block word %}
+	{% endblock %}
+</body>
+</html>

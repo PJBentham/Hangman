@@ -1,0 +1,209 @@
+html {
+	margin: 0px;
+	padding: 0px;
+}
+
+.centered {
+	text-align: center;
+}
+
+.heading {
+}
+
+.bottom {
+}
+
+.wrapper {
+	max-width: 200px;
+	height: 350px;
+	margin: auto;
+	padding-top: 30px;
+	display: block;
+}
+
+.top_frame {
+	position: relative;
+	margin: auto;
+	width: 200px;
+	height: 20px;
+	background: url("wood02-texture-old.jpg");
+	border-radius: 6px 6px 0px 6px;
+}
+
+.side_frame {
+	position: relative;
+	left: 180px;
+	width: 20px;
+	height: 300px;
+	background: url("wood02-texture-old.jpg");
+	border-radius: 6px 6px 0px 0px;
+}
+
+.base_frame {
+	position: relative;
+	margin: auto;
+	left: 90px;
+	width: 200px;
+	height: 20px;
+	background: url("wood02-texture-old.jpg");
+	border-radius: 6px 6px 6px 6px;
+}
+
+.angle1 {
+	position: relative;
+	left: 175px;
+	top: -55px;
+	-webkit-transform: rotate(45deg);
+	width: 100px;
+	height: 20px;
+	background: url("wood02-texture-old.jpg");
+	z-index: -1;
+}
+
+.angle2 {
+	position: relative;
+	left: 105px;
+	top: -75px;
+	-webkit-transform: rotate(135deg);
+	width: 100px;
+	height: 20px;
+	background: url("wood02-texture-old.jpg");
+	z-index: -1;
+}
+
+.head {
+	position: relative;
+	margin: auto;
+	top:20px;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	background-color: black;
+}
+
+.head::before {
+	position: relative;
+	content: "";
+	display: block;
+	top: -20px;
+	margin: auto;
+	width: 5px;
+	height: 50px;
+	background-color: black;
+}
+
+.lefteye {
+	position: relative;
+	top:-32px;
+	left: 10px;
+	width: 7px;
+	height: 7px;
+	border-radius: 2.5px;
+	background-color: white;
+}
+
+.righteye {
+	position: relative;
+	top:-39px;
+	left: 30px;
+	width: 7px;
+	height: 7px;
+	border-radius: 2.5px;
+	background-color: white;
+}
+
+.body {
+	position: relative;
+	margin: auto;
+	top: -15px;
+	width: 10px;
+	height: 100px;
+	background-color: black;
+}
+
+.leftarm {
+	position: relative;
+	margin: auto;
+	left: -12px;
+	top: -35px;
+	-webkit-transform: rotate(30deg);
+	width: 10px;
+	height: 50px;
+	background-color: black;
+}
+
+.rightarm {
+	position: relative;
+	margin: auto;
+	top: 15px;
+	left: 12px;
+	-webkit-transform: rotate(150deg);
+	width: 10px;
+	height: 50px;
+	background-color: black;
+}
+
+.leftleg {
+	position: relative;
+	margin: auto;
+	left: -12px;
+	top: -10px;
+	-webkit-transform: rotate(30deg);
+	width: 10px;
+	height: 50px;
+	background-color: black;
+}
+
+.rightleg {
+	position: relative;
+	margin: auto;
+	top: -60px;
+	left: 12px;
+	-webkit-transform: rotate(150deg);
+	width: 10px;
+	height: 50px;
+	background-color: black;
+}
+
+.display_word {
+	position: relative;
+	margin: auto;
+	text-align: center;
+}
+
+.display_word ul li {
+	text-decoration: none;
+	display: inline-block;
+	line-height: 30px;
+	width: 20px;
+	height: 30px;
+	background-color: lightgrey;
+	text-align: center;
+	margin: auto;
+} 
+
+.guessed_letter ul li {
+	text-decoration: none;
+	display: inline-block;
+	line-height: 30px;
+	width: 20px;
+	height: 30px;
+	background-color: lightgreen;
+	margin: 3px;
+}
+
+.guessed_letters {
+	max-width: 260px;
+	margin: auto;
+}
+
+.guessed_letters ul li {
+	text-decoration: none;
+	display: inline-block;
+	line-height: 30px;
+	width: 20px;
+	height: 30px;
+	background-color: lightblue;
+	margin: 3px;
+	float: left;
+} 

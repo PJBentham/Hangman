@@ -1,0 +1,35 @@
+{% extends "Hangman.html" %}
+{% block title %}Game{% endblock%}
+{% block intro %}Lets play!{% endblock %}
+{% block game %}
+	<div class="bottom centered">	
+		<form action="{{ url_for('guess') }}" method="POST">
+			<label>Player 2 please choose a letter:</label>
+			<input type="text" name="letter" maxlength="1" value="" autofocus>
+			<input type="submit" value="Submit!">
+		</form>
+	</div>	
+{% endblock%}
+{%block word %}
+	<div class="display_word">
+		<ul>
+			{% for letter in reveal %}
+				<li>{{letter}}</li>
+			{% endfor %}	
+		</ul>		
+	</div>
+	{%if letter %}
+	<div class="guessed_letter centered">
+		<ul>
+			<li>{{letter}}</li>	
+		</ul>
+	</div>
+	{% endif %}
+	<div class="guessed_letters centered">
+		<ul>
+			{% for letter in allguesses %}
+			<li>{{letter}}</li>
+			{% endfor %}
+		</ul>
+	</div>	
+{% endblock %}
