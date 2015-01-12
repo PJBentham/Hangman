@@ -1,4 +1,4 @@
-import os, json, re
+import json, re
 
 from flask import (
 	Flask, 
@@ -62,5 +62,5 @@ def guess():
 	else:
 		return redirect(url_for('index'))
 
-app.run()
+app.run(debug=True, port=8080)
 
