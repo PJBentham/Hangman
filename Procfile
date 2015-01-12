@@ -1,1 +1,1 @@
-web: python hangman.py
+web: gunicorn hangman:app --log-file=-
