@@ -13,7 +13,7 @@ from flask import (
 
 app = Flask(__name__)
 
-app.config['SECRET_KEY'] = '876sdfuisdfn23qr';
+app.config['SECRET_KEY'] = '';
 
 """Game Logic Code Below (controller)"""
 
